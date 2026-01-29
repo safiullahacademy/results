@@ -1370,16 +1370,16 @@
     <!-- Loading Overlay -->
     <div class="loading-overlay" id="loadingOverlay">
         <div class="loading-spinner"></div>
-        <div class="loading-text">Loading Live Data from Google Sheets...</div>
+        <div class="loading-text">Loading Results...</div>
         <p style="font-size: 0.9em; margin-top: 10px; opacity: 0.9;">🔄 Fetching latest student records</p>
     </div>
 
     <div class="container">
         <div class="header">
             <h1>LT Safiullah (Shaheed) EDN Academy 
-                <span class="live-indicator" title="Live data from Google Sheets"></span>
+                <span class="live-indicator" title="Loading Results"></span>
             </h1>
-            <p>2nd Assessment Result 2025</p>
+            <h2>3rd Assessment Result 2026</h2>
         </div>
 
         <!-- Back Button (outside search section) -->
@@ -1422,14 +1422,14 @@
 
         <div class="high-achievers-section" id="highAchieversSection">
             <button class="new-search-btn" onclick="hideHighAchievers()" style="margin-bottom: 25px;">← Back to Search</button>
-            <h2 class="high-achievers-title">🏆 High Achievers of 2nd Assessment 🏆</h2>
+            <h2 class="high-achievers-title">🏆 High Achievers of 3rd Assessment 🏆</h2>
             <div id="achieversContainer"></div>
         </div>
     </div>
 
     <script>
         // Google Sheets Configuration - NO EMBEDDED DATA
-        const SHEET_ID = '1k2SvBC3okEElz9PuYG7f1Q2I3HZq0o9H';
+        const SHEET_ID = '1agmqkJAsXI32Li4kN7tPVhvew9ROzkSu';
         const SHEET_GIDS = {
             '9th': '1188008747',
             '10th': '90925251',
@@ -1530,7 +1530,7 @@
 
         // Function to load all sheet data
         async function loadAllSheetData() {
-            console.log('🔄 Fetching live data from Google Sheets...');
+            console.log('🔄 Loading Results...');
             
             try {
                 const promises = Object.entries(SHEET_GIDS).map(([className, gid]) => 
@@ -1550,7 +1550,7 @@
                     }
                 });
                 
-                console.log('✅ All data loaded successfully from Google Sheets!');
+                console.log('✅ All data loaded successfully!');
                 
                 // Prepare high achievers data (but don't display yet)
                 displayAllHighAchievers();
@@ -1559,7 +1559,7 @@
                 
             } catch (error) {
                 console.error('❌ Error loading sheet data:', error);
-                alert('Failed to load data from Google Sheets. Please check your internet connection and refresh the page.');
+                alert('Failed to load data. Please check your internet connection and refresh the page.');
                 hideLoading();
             }
         }
@@ -1869,7 +1869,7 @@
 
     <!-- Initial Page Marquee -->
     <div class="initial-marquee" id="initialMarquee">
-        <span>📞 For more information contact 03366615550 | LT Safiullah (Shaheed) EDN Academy | 2nd Assessment Result 2025</span>
+        <span>📞 For more information contact 03366615550 | LT Safiullah (Shaheed) EDN Academy | 3rd Assessment Result 2026</span>
     </div>
 </body>
 </html>
