@@ -1658,7 +1658,7 @@
             let marksHTML = '';
             for (const [subject, mark] of Object.entries(student.subjects)) {
                 if (mark !== null) {
-                    const markClass = mark < 34 ? 'mark-value mark-fail' : 'mark-value';
+                    const markClass = mark < 32 ? 'mark-value mark-fail' : 'mark-value';
                     marksHTML += `
                         <tr>
                             <td>${subject}</td>
@@ -1726,7 +1726,7 @@
 
                     <div class="performance-grid">
                         <div class="performance-card">
-                            <div class="performance-label">Total Marks (Phy/chem/bio=85, eng/math=100, comp=75)</div>
+                            <div class="performance-label">Tota Obtained Marks</div>
                             <div class="performance-value">${student.total}</div>
                         </div>
                         <div class="performance-card">
