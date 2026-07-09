@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta property="og:description" content="FSc Half-Book result- Matric 3rd Asessment Result">
+     <meta property="og:description" content="FSc-Matric 1st Assessment Result Session - I">
     <title>LT Safiullah (Shaheed) EDN Academy</title>
-     <meta property="og:title" content="FSc Half-Book result- Matric 3rd Asessment Result">
+     <meta property="og:title" content="FSc-Matric 1st Assessment Result Session - I">
     <style>
         * {
             margin: 0;
@@ -1647,9 +1647,9 @@
             const resultCard = document.getElementById('resultCard');
             
             // Determine max marks based on class
-            let maxMarks = 250; // Default for 9th and 10th
+            let maxMarks = 150; // Default for 9th and 10th
             if (className === '11th' || className === '12th') {
-                maxMarks = 200;
+                maxMarks = 120;
             }
             
             // Get current date
@@ -1658,7 +1658,7 @@
             let marksHTML = '';
             for (const [subject, mark] of Object.entries(student.subjects)) {
                 if (mark !== null) {
-                    const markClass = mark < 32 ? 'mark-value mark-fail' : 'mark-value';
+                    const markClass = mark < 15 ? 'mark-value mark-fail' : 'mark-value';
                     marksHTML += `
                         <tr>
                             <td>${subject}</td>
@@ -1871,7 +1871,7 @@
 
     <!-- Initial Page Marquee -->
     <div class="initial-marquee" id="initialMarquee">
-        <span> Dear Students Best of Luck for your board exams 📞 For more information contact 03366615550 | LT Safiullah (Shaheed) EDN Academy | New Session is expected to start in May 2026.</span>
+        <span> Result of 1st Assessment has been uploaded | Admissions open in ongoing session  📞 For more information contact 03366615550 | LT Safiullah (Shaheed) EDN Academy</span>
     </div>
 </body>
 </html>
